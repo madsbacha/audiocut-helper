@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audiocut helper</title>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="fileselection-section hidden">
+      <header>
+        <h1>File selection</h1>
+      </header>
+      <input type="file" id="audiofile" accept=".mp3,audio/*">
+    </section>
+    <section class="loading-section hidden">
+      <header>
+        <h1>Loading...</h1>
+      </header>
+    </section>
+    <section class="audio-section hidden">
+      <header>
+        <h1>Audio cutter</h1>
+      </header>
+      <nav>
+        <button class="back" data-id="fileselection-section">Back</button>
+      </nav>
+      <h2>Controls</h2>
+      <p>Start <label id="interval-start"></label></p>
+      <p>End <label id="interval-end"></label></p>
+      <p>Current playback time <label id="current-time"></label></p>
+      <p>Volume <input type="range" id="volume"></p>
+      <p>Loop <input type="checkbox" id="loop"></p>
+      <canvas id="audio-canvas"></canvas>
+      <h2>Output</h2>
+      <p id="output"></p>
+    </section>
+    <script src="main.js"></script>
+  </div>
+</body>
+</html>
