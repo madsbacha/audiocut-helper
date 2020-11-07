@@ -39,6 +39,7 @@ window.addEventListener('load', () => {
     switchSection('loading-section')
     const file = event.target.files[0]
     audioInstance = new AudioCut(file, canvas)
+    event.target.value = ''
     audioInstance.on('load', () => {
       switchSection('audio-section')
     })
