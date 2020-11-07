@@ -1,15 +1,12 @@
-# 🚀 Welcome to your new awesome project!
+# audiocut-helper
 
-This project has been created using **webpack scaffold**, you can now run
+Build
 
 ```
-npm run build
-```
-
+> npm run build
 or
-
-```
-yarn build
+> yarn build
 ```
 
-to bundle your application
+Serve `dist` folder publicly.
+
